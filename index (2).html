@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Maria C. Alvarez | MSW E-Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --navy: #1a2744;
+  --gold: #c9a84c;
+  --gold-light: #e8d5a3;
+  --cream: #faf8f4;
+  --warm-gray: #f2ede6;
+  --text: #2c2c2c;
+  --text-light: #6b6b6b;
+  --white: #ffffff;
+
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--text); font-size:16px; line-height:1.7; }
+
+nav {
+  position:fixed; top:0; left:0; right:0;
+  background:var(--navy); z-index:100;
+  padding:0 40px; display:flex; align-items:center;
+  justify-content:space-between; height:64px;
+  box-shadow:0 2px 20px rgba(0,0,0,0.15);
+}
+.nav-name { font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--gold-light); letter-spacing:0.05em; }
+.nav-links { display:flex; gap:28px; }
+.nav-links a { color:rgba(255,255,255,0.75); text-decoration:none; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:500; transition:color 0.2s; }
+.nav-links a:hover { color:var(--gold); }
+
+.hero {
+  min-height:100vh; background:var(--navy);
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:100px 40px 60px;
+  position:relative; overflow:hidden;
+}
+.hero::before {
+  content:''; position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse at 70% 30%, rgba(201,168,76,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(201,168,76,0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 90%, rgba(232,213,163,0.12) 0%, transparent 40%);
+}
+.hero-content { position:relative; z-index:1; max-width:700px; }
+.hero-tag {
+  display:inline-block; font-size:0.75rem; letter-spacing:0.2em;
+  text-transform:uppercase; color:var(--gold);
+  border:1px solid rgba(201,168,76,0.4); padding:6px 18px;
+  border-radius:100px; margin-bottom:28px; font-weight:500;
+}
+.hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(3rem,6vw,5rem); font-weight:300; color:var(--white); line-height:1.1; margin-bottom:12px; }
+.hero h1 em { font-style:italic; color:var(--gold-light); }
+.hero-subtitle { font-size:1rem; color:rgba(255,255,255,0.6); margin-bottom:40px; font-weight:300; }
+.hero-divider { width:60px; height:1px; background:var(--gold); margin:0 auto 40px; opacity:0.6; }
+.hero-bio { font-size:1.05rem; color:rgba(255,255,255,0.75); line-height:1.8; font-weight:300; max-width:580px; margin:0 auto 48px; }
+.hero-badges { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+.badge { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); color:rgba(255,255,255,0.8); padding:7px 16px; border-radius:100px; font-size:0.8rem; }
+
+section { padding:80px 40px; max-width:1000px; margin:0 auto; }
+.section-label { font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:500; margin-bottom:12px; }
+.section-title { font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,4vw,3rem); font-weight:400; color:var(--navy); line-height:1.15; margin-bottom:40px; }
+.section-divider { width:48px; height:2px; background:var(--gold); margin-bottom:40px; }
+
+/* COMPETENCIES */
+.comp-section { background:var(--navy); padding:80px 0; }
+.comp-inner { max-width:1000px; margin:0 auto; padding:0 40px; }
+.comp-inner .section-title { color:var(--white); }
+.comp-inner .section-label { color:var(--gold); }
+.comp-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:18px; }
+.comp-card { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:24px; transition:background 0.2s; }
+.comp-card:hover { background:rgba(255,255,255,0.12); transform:translateY(-2px); }
+.comp-card:nth-child(1) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(2) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(3) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(4) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(5) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(6) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(7) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(8) { border-top:3px solid var(--gold); }
+.comp-card:nth-child(9) { border-top:3px solid var(--gold); }
+.comp-number { font-family:'Cormorant Garamond',serif; font-size:2.2rem; color:var(--gold); opacity:0.5; line-height:1; margin-bottom:10px; }
+.comp-title { font-size:0.88rem; color:var(--white); font-weight:500; margin-bottom:6px; line-height:1.4; }
+.comp-desc { font-size:0.8rem; color:rgba(255,255,255,0.5); line-height:1.6; }
+
+/* KLE */
+.kle-card { background:var(--white); border-radius:16px; padding:36px; box-shadow:0 2px 20px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.06); margin-bottom:32px; overflow:hidden; position:relative; }
+.kle-card:nth-child(1) { border-left:5px solid var(--gold); }
+.kle-card:nth-child(1)::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg, var(--gold), var(--gold-light)); }
+.kle-card:nth-child(2) { border-left:5px solid var(--gold); }
+.kle-card:nth-child(2)::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg, var(--gold-light), var(--gold)); }
+.kle-card:nth-child(3) { border-left:5px solid var(--gold); }
+.kle-card:nth-child(3)::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg, var(--gold), var(--gold-light)); }
+.kle-tags { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+.kle-tag { font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; border-radius:100px; font-weight:500; }
+.tag-num { background:var(--navy); color:var(--gold); }
+.tag-course { background:var(--warm-gray); color:var(--navy); }
+.tag-grade { background:#e8f5e9; color:#2e7d32; }
+.kle-card:nth-child(1) .kle-comps { color:var(--gold); }
+.kle-card:nth-child(2) .kle-comps { color:var(--gold); }
+.kle-card:nth-child(3) .kle-comps { color:var(--gold); }
+
+/* KLE SECTION BG */
+#kle { background:linear-gradient(135deg, #fdf9f0 0%, #faf8f4 50%, #fdf5e6 100%); padding:80px 40px; max-width:100%; margin:0; }
+#kle > * { max-width:1000px; margin-left:auto; margin-right:auto; }
+.kle-title { font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--navy); font-weight:600; margin-bottom:6px; }
+.kle-comps { font-size:0.75rem; color:var(--gold); letter-spacing:0.1em; text-transform:uppercase; font-weight:500; margin-bottom:16px; }
+.kle-narrative { font-size:0.92rem; color:var(--text-light); line-height:1.8; margin-bottom:16px; }
+.kle-why { background:var(--warm-gray); border-radius:8px; padding:16px 20px; font-size:0.84rem; color:var(--text-light); }
+.kle-why strong { color:var(--navy); }
+
+/* CONTACT */
+.contact-section { background:linear-gradient(135deg, var(--navy) 0%, #2a1a44 50%, #1a2a44 100%); padding:70px 40px; text-align:center; }
+.contact-section .section-title { color:var(--white); margin-bottom:14px; }
+.contact-section p { color:rgba(255,255,255,0.6); margin-bottom:32px; }
+.contact-links { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+.contact-link { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); color:var(--white); text-decoration:none; padding:11px 22px; border-radius:8px; font-size:0.86rem; transition:background 0.2s; }
+.contact-link:hover { background:rgba(201,168,76,0.2); border-color:var(--gold); }
+
+footer { background:#111827; padding:28px 40px; text-align:center; }
+footer p { font-size:0.8rem; color:rgba(255,255,255,0.3); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Maria C. Alvarez</div>
+  <div class="nav-links">
+    <a href="#competencies">Competencies</a>
+    <a href="#kle">Key Learning</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">MSW E-Portfolio</div>
+    <h1>Maria C. <em>Alvarez</em></h1>
+    <p class="hero-subtitle">Master of Social Work · California State University, Dominguez Hills</p>
+    <div class="hero-divider"></div>
+    <p class="hero-bio">A bilingual, community-rooted social worker committed to trauma-informed, culturally responsive, and equity-centered practice. Graduating May 2026.</p>
+    <div class="hero-badges">
+      <span class="badge">Clinical Mental Health</span>
+      <span class="badge">Bilingual EN/ES</span>
+      <span class="badge">CRT Framework</span>
+      <span class="badge">Community Practice</span>
+      <span class="badge">CSUDH MSW 2026</span>
+    </div>
+  </div>
+</div>
+
+<!-- COMPETENCIES -->
+<div class="comp-section" id="competencies">
+  <div class="comp-inner">
+    <p class="section-label">CSWE Standards</p>
+    <h2 class="section-title">9 Social Work Competencies</h2>
+    <div class="comp-grid">
+      <div class="comp-card">
+        <div class="comp-number">01</div>
+        <div class="comp-title">Ethical & Professional Behavior</div>
+        <div class="comp-desc">Demonstrated through ethical decision-making in crisis situations, transparency with clients, and NASW Code of Ethics application.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">02</div>
+        <div class="comp-title">Engage Diversity & Difference</div>
+        <div class="comp-desc">Applied through recovery-oriented, culturally responsive practice honoring each client's unique identity and social context.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">03</div>
+        <div class="comp-title">Advance Human Rights & Justice</div>
+        <div class="comp-desc">Addressed systemic inequities in access to culturally responsive services through PAR research and CRT-informed practice.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">04</div>
+        <div class="comp-title">Practice-Informed Research</div>
+        <div class="comp-desc">Designed a PAR proposal integrating community perspectives into research, grounding practice in both evidence and lived experience.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">05</div>
+        <div class="comp-title">Engage in Policy Practice</div>
+        <div class="comp-desc">Analyzed social policies affecting mental health and recovery, identifying how structural barriers limit access to care for marginalized populations.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">06</div>
+        <div class="comp-title">Engage Individuals & Communities</div>
+        <div class="comp-desc">Applied developmental frameworks to engage clients thoughtfully across life stages with tailored communication strategies.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">07</div>
+        <div class="comp-title">Assess Individuals & Families</div>
+        <div class="comp-desc">Conducted biopsychosocial and risk assessments informed by developmental theory and ecological systems frameworks.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">08</div>
+        <div class="comp-title">Intervene with Individuals & Families</div>
+        <div class="comp-desc">Applied evidence-based intervention strategies grounded in human development theory to support client growth and well-being across the lifespan.</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-number">09</div>
+        <div class="comp-title">Evaluate Practice with Individuals</div>
+        <div class="comp-desc">Evaluated outcomes of micro and macro interventions using research-informed frameworks, reflecting critically on practice effectiveness and areas for growth.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- KEY LEARNING EXPERIENCES -->
+<section id="kle">
+  <p class="section-label">Academic Excellence</p>
+  <h2 class="section-title">Key Learning Experiences</h2>
+  <div class="section-divider"></div>
+  <p style="color:var(--text-light); font-size:0.93rem; margin-bottom:40px; max-width:680px;">The following three assignments demonstrate proficiency across all nine CSWE social work competencies, completed during the Master of Social Work program at California State University, Dominguez Hills.</p>
+
+  <div class="kle-card">
+    <div class="kle-tags">
+      <span class="kle-tag tag-num">KLE 1</span>
+      <span class="kle-tag tag-course">MSW 531 — Research Methods</span>
+      <span class="kle-tag tag-grade">⭐ 25/25</span>
+    </div>
+    <div class="kle-title">Participatory Action Research Proposal</div>
+    <div class="kle-comps">Competencies: 1, 3, 4, 6, 9</div>
+    <p class="kle-narrative"><strong style="color:var(--text);">Reflective Narrative:</strong> I chose this assignment because it demonstrates my ability to use research to understand community issues and support social change. This project helped me strengthen my skills in research-informed practice and ethical decision-making. Designing a CPAR proposal around illegal trash dumping in South Central LA pushed me to think beyond the individual and consider how systemic racism and environmental inequity intersect. It also challenged me to center community voices as co-researchers rather than subjects, which deepened my understanding of participatory justice and my own role as an advocate.</p>
+    <div class="kle-why"><strong>Why I included this:</strong> This assignment showcases my ability to integrate CRT, environmental justice frameworks, and community-based research methods — skills central to macro social work practice.</div>
+  </div>
+
+  <div class="kle-card">
+    <div class="kle-tags">
+      <span class="kle-tag tag-num">KLE 2</span>
+      <span class="kle-tag tag-course">MSW 582 — Mental Health Practice</span>
+      <span class="kle-tag tag-grade">⭐ 92/100</span>
+    </div>
+    <div class="kle-title">Recovery Narrative Paper Part 2</div>
+    <div class="kle-comps">Competencies: 1, 2, 5, 9</div>
+    <p class="kle-narrative"><strong style="color:var(--text);">Reflective Narrative:</strong> I chose this assignment because it demonstrates my understanding of how trauma and social support influence recovery. It also reflects my ability to analyze research and consider the cultural and systemic factors that affect mental health. Writing this paper challenged me to examine recovery not as a linear process but as something shaped by identity, community, and access to resources. It reinforced my commitment to providing culturally responsive, trauma-informed care — and reminded me why representation and lived experience matter in clinical practice.</p>
+    <div class="kle-why"><strong>Why I included this:</strong> This paper highlights my ability to connect research, policy, and cultural competency to real clinical practice — demonstrating depth in both micro and macro perspectives.</div>
+  </div>
+
+  <div class="kle-card">
+    <div class="kle-tags">
+      <span class="kle-tag tag-num">KLE 3</span>
+      <span class="kle-tag tag-course">MSW 500 — Human Development</span>
+      <span class="kle-tag tag-grade">⭐ 37/40</span>
+    </div>
+    <div class="kle-title">Development Theory Paper</div>
+    <div class="kle-comps">Competencies: 4, 6, 7, 8</div>
+    <p class="kle-narrative"><strong style="color:var(--text);">Reflective Narrative:</strong> I chose this assignment because it demonstrates my understanding of human development theories and how they guide social work assessment and intervention with clients. Engaging with multiple theoretical frameworks — from Erikson to ecological systems theory — helped me see how development is never just biological but deeply shaped by environment, culture, and social context. This paper strengthened my ability to meet clients where they are developmentally and to tailor my approach based on the unique life stage challenges each person faces.</p>
+    <div class="kle-why"><strong>Why I included this:</strong> This assignment demonstrates my theoretical foundation in human development and my ability to apply multiple frameworks to assessment and intervention — core competencies for direct practice.</div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+  <p class="section-label" style="color:var(--gold);">Get In Touch</p>
+  <h2 class="section-title">Contact</h2>
+  <p>Feel free to reach out for professional inquiries or collaboration.</p>
+  <div class="contact-links">
+    <a href="mailto:conniealvarez007@gmail.com" class="contact-link">✉ conniealvarez007@gmail.com</a>
+    <a href="tel:5628056150" class="contact-link">📞 (562) 805-6150</a>
+    <a href="#" class="contact-link">📍 Los Angeles, CA</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Maria C. Alvarez · MSW E-Portfolio · California State University, Dominguez Hills</p>
+</footer>
+
+</body>
+</html>
