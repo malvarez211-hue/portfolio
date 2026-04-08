@@ -126,6 +126,34 @@ nav {
 .kle-why { background:var(--warm-gray); border-radius:8px; padding:14px 18px; font-size:0.83rem; color:var(--text-light); }
 .kle-why strong { color:var(--navy); }
 
+/* RESUME */
+.resume-bg { background:var(--white); }
+.resume-grid { display:grid; grid-template-columns:1fr 300px; gap:60px; align-items:start; }
+.resume-main {}
+.resume-sidebar {}
+.award-card {
+  background:linear-gradient(135deg, var(--navy) 0%, #2a1a44 100%);
+  border-radius:12px; padding:24px; margin-bottom:24px;
+  border:1px solid rgba(201,168,76,0.3);
+}
+.award-card .award-title { font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--gold-light); font-weight:600; margin-bottom:6px; }
+.award-card .award-amount { font-size:1.4rem; color:var(--gold); font-weight:700; margin-bottom:6px; }
+.award-card .award-desc { font-size:0.8rem; color:rgba(255,255,255,0.6); line-height:1.6; }
+.resume-job { margin-bottom:28px; padding-bottom:28px; border-bottom:1px solid var(--warm-gray); }
+.resume-job:last-child { border-bottom:none; }
+.resume-job-header { display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:8px; margin-bottom:4px; }
+.resume-job-title { font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--navy); font-weight:600; }
+.resume-job-dates { font-size:0.78rem; color:var(--gold); font-weight:500; letter-spacing:0.05em; white-space:nowrap; }
+.resume-job-org { font-size:0.83rem; color:var(--text-light); font-style:italic; margin-bottom:10px; }
+.resume-job ul { padding-left:18px; }
+.resume-job ul li { font-size:0.86rem; color:var(--text-light); line-height:1.7; margin-bottom:4px; }
+.resume-skill-list { display:flex; flex-wrap:wrap; gap:8px; }
+.resume-skill { background:var(--warm-gray); border:1px solid rgba(0,0,0,0.06); color:var(--navy); font-size:0.78rem; padding:5px 12px; border-radius:100px; font-weight:500; }
+.resume-edu-item { margin-bottom:16px; }
+.resume-edu-degree { font-family:'Cormorant Garamond',serif; font-size:1rem; color:var(--navy); font-weight:600; }
+.resume-edu-school { font-size:0.83rem; color:var(--text-light); }
+.resume-edu-year { font-size:0.78rem; color:var(--gold); font-weight:500; }
+
 /* CONTACT */
 .contact-bg {
   background:linear-gradient(135deg, var(--navy) 0%, #1e1a3a 60%, #1a2a44 100%);
@@ -164,6 +192,7 @@ footer p { font-size:0.78rem; color:rgba(255,255,255,0.28); }
     <a href="#about">About</a>
     <a href="#competencies">Competencies</a>
     <a href="#kle">Key Learning</a>
+    <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -320,6 +349,149 @@ footer p { font-size:0.78rem; color:rgba(255,255,255,0.28); }
       <div class="kle-why"><strong>Why I included this:</strong> This assignment demonstrates my theoretical foundation in human development and my ability to apply multiple frameworks to assessment and intervention — core competencies for direct practice.</div>
     </div>
 
+  </div>
+</div>
+
+<!-- RESUME -->
+<div class="resume-bg" id="resume">
+  <div class="section-wrap">
+    <p class="section-label">Curriculum Vitae</p>
+    <h2 class="section-title">Resume</h2>
+    <div class="section-divider"></div>
+
+    <div class="resume-grid">
+
+      <!-- MAIN COLUMN -->
+      <div class="resume-main">
+
+        <!-- PROFILE -->
+        <p style="font-size:0.93rem; color:var(--text-light); line-height:1.8; margin-bottom:32px;">Bilingual (English/Spanish) clinical social work intern and MSW Candidate at California State University, Dominguez Hills. Dedicated to trauma-informed, culturally responsive, and equity-centered practice. LA County DMH Graduate Stipend Award recipient committed to public mental health service in underserved communities.</p>
+
+        <!-- EXPERIENCE -->
+        <p class="section-label">Work Experience</p>
+        <div class="section-divider" style="margin-bottom:24px;"></div>
+
+        <div class="resume-job">
+          <div class="resume-job-header">
+            <div class="resume-job-title">Clinical Social Worker Intern</div>
+            <div class="resume-job-dates">09/2024 – Present</div>
+          </div>
+          <div class="resume-job-org">Rio Hondo Mental Health Clinic · Cerritos, CA</div>
+          <ul>
+            <li>Conduct weekly 60-minute individual therapy sessions for a caseload of 5 adult clients, addressing emotional regulation, coping skills, and treatment goals.</li>
+            <li>Conduct 3 comprehensive intake assessments per week completing biopsychosocial evaluations and determining appropriate level of care.</li>
+            <li>Complete timely clinical documentation including progress notes (GIRP format) and comprehensive adult assessments in the electronic health record.</li>
+            <li>Collaborate with multidisciplinary teams to support treatment planning, care coordination, and service linkage.</li>
+            <li>Coordinate care by ensuring clients are scheduled for psychiatric appointments for medication evaluation and management.</li>
+          </ul>
+        </div>
+
+        <div class="resume-job">
+          <div class="resume-job-header">
+            <div class="resume-job-title">Scholar & Intern</div>
+            <div class="resume-job-dates">10/2024 – 06/2026</div>
+          </div>
+          <div class="resume-job-org">California AHEC Scholars Program · Los Angeles, CA</div>
+          <ul>
+            <li>Completed 9 online didactic modules focused on primary care systems, community health, and health workforce development.</li>
+            <li>Designed and implemented a Personal Leadership Strategy for a Community-Based Health Project, engaging community members, clinic staff, and organizational partners.</li>
+            <li>Developed competencies in patient-centered care, interprofessional collaboration, community health advocacy, and cultural competency.</li>
+          </ul>
+        </div>
+
+        <div class="resume-job">
+          <div class="resume-job-header">
+            <div class="resume-job-title">School Counselor Intern</div>
+            <div class="resume-job-dates">08/2024 – 05/2025</div>
+          </div>
+          <div class="resume-job-org">KIPP Charter Schools · Los Angeles, CA</div>
+          <ul>
+            <li>Facilitated weekly group counseling sessions for middle school students focusing on emotional regulation, peer relationships, and coping skills.</li>
+            <li>Provided individual counseling to elementary students to support emotional development and behavioral needs.</li>
+            <li>Delivered on-demand crisis and emotional support, promoting a safe and supportive school environment.</li>
+          </ul>
+        </div>
+
+        <div class="resume-job">
+          <div class="resume-job-header">
+            <div class="resume-job-title">Community Health Worker</div>
+            <div class="resume-job-dates">01/2023 – 08/2024</div>
+          </div>
+          <div class="resume-job-org">WLCAC Department of Family Services · Los Angeles, CA</div>
+          <ul>
+            <li>Managed a caseload of 30 clients, conducting comprehensive assessments and developing individualized care plans.</li>
+            <li>Coordinated with parole officers and justice system stakeholders to track client progress and compliance with court-ordered treatment.</li>
+            <li>Facilitated referrals to community resources including housing, food assistance, and mental health services.</li>
+          </ul>
+        </div>
+
+        <div class="resume-job">
+          <div class="resume-job-header">
+            <div class="resume-job-title">Intern</div>
+            <div class="resume-job-dates">08/2022 – 12/2022</div>
+          </div>
+          <div class="resume-job-org">Casa Carmen Senior Home · Los Angeles, CA</div>
+          <ul>
+            <li>Supported 20–30 residents weekly with activities of daily living, medical appointment follow-ups, and medication coordination.</li>
+            <li>Created a monthly activity calendar to increase resident engagement and social interaction.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="resume-sidebar">
+
+        <!-- AWARD -->
+        <div class="award-card">
+          <div class="award-title">🏆 DMH Stipend Award Recipient</div>
+          <div class="award-amount">$18,500</div>
+          <div class="award-desc">LA County Department of Mental Health Graduate Stipend · 2025–2026 · Awarded to select MSW students committed to public mental health service in LA County.</div>
+        </div>
+
+        <!-- EDUCATION -->
+        <p class="section-label">Education</p>
+        <div class="section-divider" style="margin-bottom:16px;"></div>
+        <div class="resume-edu-item">
+          <div class="resume-edu-degree">Master of Social Work (MSW)</div>
+          <div class="resume-edu-school">California State University, Dominguez Hills</div>
+          <div class="resume-edu-year">Expected May 2026</div>
+        </div>
+        <div class="resume-edu-item">
+          <div class="resume-edu-degree">Bachelor of Arts in Human Services</div>
+          <div class="resume-edu-school">California State University, Dominguez Hills</div>
+          <div class="resume-edu-year">May 2023</div>
+        </div>
+        <div class="resume-edu-item">
+          <div class="resume-edu-degree">Associate of Arts in Sociology</div>
+          <div class="resume-edu-school">Cerritos College</div>
+          <div class="resume-edu-year">March 2021</div>
+        </div>
+
+        <!-- SKILLS -->
+        <p class="section-label" style="margin-top:28px;">Skills</p>
+        <div class="section-divider" style="margin-bottom:16px;"></div>
+        <div class="resume-skill-list">
+          <span class="resume-skill">Individual Therapy</span>
+          <span class="resume-skill">Group Therapy</span>
+          <span class="resume-skill">Crisis Intervention</span>
+          <span class="resume-skill">Biopsychosocial Assessment</span>
+          <span class="resume-skill">Suicide Risk Assessment</span>
+          <span class="resume-skill">Trauma-Informed Care</span>
+          <span class="resume-skill">CBT</span>
+          <span class="resume-skill">GIRP Documentation</span>
+          <span class="resume-skill">Care Coordination</span>
+          <span class="resume-skill">Case Management</span>
+          <span class="resume-skill">Safety Planning</span>
+          <span class="resume-skill">Telehealth</span>
+          <span class="resume-skill">Cultural Humility</span>
+          <span class="resume-skill">CRT Framework</span>
+          <span class="resume-skill">Motivational Interviewing</span>
+          <span class="resume-skill">Bilingual EN/ES</span>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
 
